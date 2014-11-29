@@ -97,6 +97,12 @@ class PlayerStats
     int games_finish;
     int games_complete;
     
+    public PlayerStats(Node node)
+    {
+        // Initialize from XML Node
+        loadDataFromNode(node);
+    }
+    
     private String getNodesNamedItem(Node node, String namedItem)
     {
         String returnVal = new String("0");
@@ -299,13 +305,6 @@ class PlayerStats
                 }
             }
         }
-
-    }
-    
-    public PlayerStats(Node node)
-    {
-        // Initialize from XML Node
-        loadDataFromNode(node);
     }
     
     public String toString()

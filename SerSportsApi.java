@@ -55,6 +55,8 @@ class SerSportsApi
             }
         }
         System.out.println(playerList.size() + " players loaded.");
-        System.out.println(playerList.get(1).toString());
+        
+        PlayerComparison comparison = new PlayerComparison();
+        System.out.println(comparison.getTwoPlayerComparisonDescription(playerList.get(5), playerList.get(7)));
     }
 }
