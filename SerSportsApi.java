@@ -33,7 +33,7 @@ class SerSportsApi
         Document document = builder.parse(url.openStream());
         
         // Create list of players
-        List<PlayerStats> playerList = new ArrayList<>();
+        List<PlayerStats> playerList = new ArrayList<PlayerStats>();
         
         //Iterating through the nodes and extracting the data.
         NodeList nodeList = document.getDocumentElement().getChildNodes();
@@ -48,11 +48,13 @@ class SerSportsApi
                 PlayerStats player = new PlayerStats(node);
                 
                 // Print out the player names.
-                System.out.println(player.toString());
+                //System.out.println(player.toString());
                 
                 // Add the Player to the list
                 playerList.add(player);
             }
         }
+        System.out.println(playerList.size() + " players loaded.");
+        System.out.println(playerList.get(1).toString());
     }
 }
