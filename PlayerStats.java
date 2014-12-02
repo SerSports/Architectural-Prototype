@@ -309,90 +309,90 @@ class PlayerStats
     
     public String toString()
     {
-        return new String("id: " + id + " " +
-                          "first_name: " + first_name + " " +
-                          "last_name: " + last_name + " " +
-                          "preferred_name: " + preferred_name +
-                          "team_id: " + team_id + " " +
-                          "team_name: " + team_name + " " +
+        return new String("id: " + id + "\n" +
+                          "first_name: " + first_name + "\n" +
+                          "last_name: " + last_name + "\n" +
+                          "preferred_name: " + preferred_name + "\n" +
+                          "team_id: " + team_id + "\n" +
+                          "team_name: " + team_name + "\n" +
                           
-                          "hitting_ab: " + hitting_ab + " " +
-                          "hitting_ap: " + hitting_ap + " " +
-                          "hitting_avg: " + hitting_avg + " " +
-                          "hitting_lob: " + hitting_lob + " " +
-                          "hitting_pcount: " + hitting_pcount + " " +
-                          "hitting_rbi: " + hitting_rbi + " " +
-                          "hitting_abhr: " + hitting_abhr + " " +
-                          "hitting_abk: " + hitting_abk + " " +
-                          "hitting_bip: " + hitting_bip + " " +
-                          "hitting_babip: " + hitting_babip + " " +
-                          "hitting_bbk: " + hitting_bbk + " " +
-                          "hitting_bbpa: " + hitting_bbpa + " " +
-                          "hitting_gofo: " + hitting_gofo + " " +
-                          "hitting_iso: " + hitting_iso + " " +
-                          "hitting_obp: " + hitting_obp + " " +
-                          "hitting_ops: " + hitting_ops + " " +
-                          "hitting_seca: " + hitting_seca + " " +
-                          "hitting_slg: " + hitting_slg + " " +
-                          "hitting_xbh: " + hitting_xbh + " " +
+                          "hitting_ab: " + hitting_ab + "\n" +
+                          "hitting_ap: " + hitting_ap + "\n" +
+                          "hitting_avg: " + hitting_avg + "\n" +
+                          "hitting_lob: " + hitting_lob + "\n" +
+                          "hitting_pcount: " + hitting_pcount + "\n" +
+                          "hitting_rbi: " + hitting_rbi + "\n" +
+                          "hitting_abhr: " + hitting_abhr + "\n" +
+                          "hitting_abk: " + hitting_abk + "\n" +
+                          "hitting_bip: " + hitting_bip + "\n" +
+                          "hitting_babip: " + hitting_babip + "\n" +
+                          "hitting_bbk: " + hitting_bbk + "\n" +
+                          "hitting_bbpa: " + hitting_bbpa + "\n" +
+                          "hitting_gofo: " + hitting_gofo + "\n" +
+                          "hitting_iso: " + hitting_iso + "\n" +
+                          "hitting_obp: " + hitting_obp + "\n" +
+                          "hitting_ops: " + hitting_ops + "\n" +
+                          "hitting_seca: " + hitting_seca + "\n" +
+                          "hitting_slg: " + hitting_slg + "\n" +
+                          "hitting_xbh: " + hitting_xbh + "\n" +
                           
-                          "pitching_pcount: " + pitching_pcount + " " +
-                          "pitching_error: " + pitching_error + " " +
-                          "pitching_ip_1: " + pitching_ip_1 + " " +
-                          "pitching_ip_2: " + pitching_ip_2 + " " +
-                          "pitching_bf: " + pitching_bf + " " +
-                          "pitching_oba: " + pitching_oba + " " +
-                          "pitching_gofo: " + pitching_gofo + " " +
-                          "pitching_lob: " + pitching_lob + " " +
-                          "pitching_era: " + pitching_era + " " +
-                          "pitching_k9: " + pitching_k9 + " " +
-                          "pitching_whip: " + pitching_whip + " " +
-                          "pitching_kbb: " + pitching_kbb + " " +
+                          "pitching_pcount: " + pitching_pcount + "\n" +
+                          "pitching_error: " + pitching_error + "\n" +
+                          "pitching_ip_1: " + pitching_ip_1 + "\n" +
+                          "pitching_ip_2: " + pitching_ip_2 + "\n" +
+                          "pitching_bf: " + pitching_bf + "\n" +
+                          "pitching_oba: " + pitching_oba + "\n" +
+                          "pitching_gofo: " + pitching_gofo + "\n" +
+                          "pitching_lob: " + pitching_lob + "\n" +
+                          "pitching_era: " + pitching_era + "\n" +
+                          "pitching_k9: " + pitching_k9 + "\n" +
+                          "pitching_whip: " + pitching_whip + "\n" +
+                          "pitching_kbb: " + pitching_kbb + "\n" +
                           
-                          "onbase_h: " + onbase_h + " " +
-                          "onbase_s: " + onbase_s + " " +
-                          "onbase_d: " + onbase_d + " " +
-                          "onbase_t: " + onbase_t + " " +
-                          "onbase_hr: " + onbase_hr + " " +
-                          "onbase_tb: " + onbase_tb + " " +
-                          "onbase_bb: " + onbase_bb + " " +
-                          "onbase_ibb: " + onbase_ibb + " " +
-                          "onbase_hbp: " + onbase_hbp + " " +
-                          "onbase_fc: " + onbase_fc + " " +
-                          "onbase_roe: " + onbase_roe + " " +
+                          "onbase_h: " + onbase_h + "\n" +
+                          "onbase_s: " + onbase_s + "\n" +
+                          "onbase_d: " + onbase_d + "\n" +
+                          "onbase_t: " + onbase_t + "\n" +
+                          "onbase_hr: " + onbase_hr + "\n" +
+                          "onbase_tb: " + onbase_tb + "\n" +
+                          "onbase_bb: " + onbase_bb + "\n" +
+                          "onbase_ibb: " + onbase_ibb + "\n" +
+                          "onbase_hbp: " + onbase_hbp + "\n" +
+                          "onbase_fc: " + onbase_fc + "\n" +
+                          "onbase_roe: " + onbase_roe + "\n" +
                           
-                          "runs_unearned: " + runs_unearned + " " +
-                          "runs_earned: " + runs_earned + " " +
-                          "runs_total: " + runs_total + " " +
+                          "runs_unearned: " + runs_unearned + "\n" +
+                          "runs_earned: " + runs_earned + "\n" +
+                          "runs_total: " + runs_total + "\n" +
                           
-                          "outcome_klook: " + outcome_klook + " " +
-                          "outcome_kswing: " + outcome_kswing + " " +
-                          "outcome_ktotal: " + outcome_ktotal + " " +
-                          "outcome_ball: " + outcome_ball + " " +
-                          "outcome_iball: " + outcome_iball + " " +
-                          "outcome_dirtball: " + outcome_dirtball + " " +
-                          "outcome_foul: " + outcome_foul + " " +
+                          "outcome_klook: " + outcome_klook + "\n" +
+                          "outcome_kswing: " + outcome_kswing + "\n" +
+                          "outcome_ktotal: " + outcome_ktotal + "\n" +
+                          "outcome_ball: " + outcome_ball + "\n" +
+                          "outcome_iball: " + outcome_iball + "\n" +
+                          "outcome_dirtball: " + outcome_dirtball + "\n" +
+                          "outcome_foul: " + outcome_foul + "\n" +
                           
-                          "outs_klook: " + outs_klook + " " +
-                          "outs_kswing: " + outs_kswing + " " +
-                          "outs_ktotal: " + outs_ktotal + " " +
-                          "outs_po: " + outs_po + " " +
-                          "outs_fo: " + outs_fo + " " +
-                          "outs_fidp: " + outs_fidp + " " +
-                          "outs_go: " + outs_go + " " +
-                          "outs_gidp: " + outs_gidp + " " +
-                          "outs_lo: " + outs_lo + " " +
-                          "outs_lidp: " + outs_lidp + " " +
-                          "outs_sacfly: " + outs_sacfly + " " +
-                          "outs_sachit: " + outs_sachit + " " +
+                          "outs_klook: " + outs_klook + "\n" +
+                          "outs_kswing: " + outs_kswing + "\n" +
+                          "outs_ktotal: " + outs_ktotal + "\n" +
+                          "outs_po: " + outs_po + "\n" +
+                          "outs_fo: " + outs_fo + "\n" +
+                          "outs_fidp: " + outs_fidp + "\n" +
+                          "outs_go: " + outs_go + "\n" +
+                          "outs_gidp: " + outs_gidp + "\n" +
+                          "outs_lo: " + outs_lo + "\n" +
+                          "outs_lidp: " + outs_lidp + "\n" +
+                          "outs_sacfly: " + outs_sacfly + "\n" +
+                          "outs_sachit: " + outs_sachit + "\n" +
                           
-                          "steal_caught: " + steal_caught + " " +
-                          "steal_stolen: " + steal_stolen + " " +
-                          "steal_pct: " + steal_pct + " " +
+                          "steal_caught: " + steal_caught + "\n" +
+                          "steal_stolen: " + steal_stolen + "\n" +
+                          "steal_pct: " + steal_pct + "\n" +
                           
-                          "games_start: " + games_start + " " +
-                          "games_play: " + games_play + " " +
-                          "games_finish: " + games_finish + " " +
+                          "games_start: " + games_start + "\n" +
+                          "games_play: " + games_play + "\n" +
+                          "games_finish: " + games_finish + "\n" +
                           "games_complete: " + games_complete
                           );
     }

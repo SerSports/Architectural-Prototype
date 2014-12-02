@@ -21,6 +21,8 @@ class SerSportsApi
     
     public static void main(String[] args) throws Exception
     {
+        outoutIntro();
+        
         // Get the DOM Builder Factory
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         
@@ -29,6 +31,7 @@ class SerSportsApi
         
         //Load and Parse the XML document
         //document contains the complete XML as a Tree.
+        System.out.println("Pulling statistics from Sports Data LLC...\n");
         URL url = new URL(apiUrl + apiKey);
         Document document = builder.parse(url.openStream());
         
@@ -38,6 +41,7 @@ class SerSportsApi
         //Iterating through the nodes and extracting the data.
         NodeList nodeList = document.getDocumentElement().getChildNodes();
         
+        System.out.println("Loading MLB Player database...");
         for (int i = 0; i < nodeList.getLength(); i++)
         {
             //We have encountered an <employee> tag.
@@ -54,9 +58,32 @@ class SerSportsApi
                 playerList.add(player);
             }
         }
-        System.out.println(playerList.size() + " players loaded.");
+        System.out.println(playerList.size() + " players loaded.\n");
         
+        System.out.println("Comparing two random players...");
         PlayerComparison comparison = new PlayerComparison();
-        System.out.println(comparison.getTwoPlayerComparisonDescription(playerList.get(5), playerList.get(7)));
+        PlayerStats player1 = playerList.get(randInt(0, playerList.size()));
+        PlayerStats player2 = playerList.get(randInt(0, playerList.size()));
+        System.out.println(comparison.getTwoPlayerComparisonDescription(player1, player2)+"\n");
+        
+        //System.out.println("\n" + player1.toString() + "\n" + player2.toString());
+    }
+    
+    public static void outoutIntro()
+    {
+        System.out.println("==================================================");
+        System.out.println("              CST 315 - SER SPORTS                ");
+        System.out.println("             ARCHITECTURAL PROTOTYPE              ");
+        System.out.println("                   ----------                     ");
+        System.out.println("          Kristel Basra, Ashley Mannon,           ");
+        System.out.println("     Graydon Svendson, and Gabriela Tikhonova     ");
+        System.out.println("==================================================");
+        
+    }
+    
+    public static int randInt(int min, int max)
+    {
+        Random rand = new Random();
+        return rand.nextInt((max - min) + 1) + min;
     }
 }
