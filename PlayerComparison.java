@@ -4,9 +4,16 @@ public class PlayerComparison implements PlayerComparisonInterface
     private float getStatPerc(float stat1, float stat2)
     {
         if (stat1 == 0 || stat2 == 0)
+        {
             return 0;
+        }
         else
-            return stat1 / stat2;
+        {
+            if (stat1 < stat2)
+                return stat1 / stat2;
+            else
+                return stat2 / stat1;
+        }
     }
     private float getStatPerc(int stat1, int stat2)
     {
